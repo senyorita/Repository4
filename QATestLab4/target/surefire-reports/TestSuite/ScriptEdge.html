@@ -1,0 +1,784 @@
+<html>
+<head>
+<title>TestNG:  ScriptEdge</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>ScriptEdge</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>7/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Nov 29 01:41:31 EET 2017</td>
+</tr>
+<tr><td>Total time:</td><td>29 seconds (29159 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Test.QATestLab4.Script.activationAndSave()'><b>activationAndSave</b><br>Test class: Test.QATestLab4.Script<br/>
+<a href="#Output-372469954" onClick='toggleBox("Output-372469954", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-372469954" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-372469954">
+Before finding the item: By.xpath: //div[@class = 'col-lg-5']/div<br/>
+After finding the item: By.xpath: //div[@class = 'col-lg-5']/div<br/>
+Click on the button to activate a new product.<br/>
+Before clicking on an item: [[EdgeDriver: MicrosoftEdge on WINDOWS (F0583579-1D7A-4797-B434-9AD421EEC78A)] -> xpath: //div[@class = 'col-lg-5']/div]<br/>
+After clicking on the item: [[EdgeDriver: MicrosoftEdge on WINDOWS (F0583579-1D7A-4797-B434-9AD421EEC78A)] -> xpath: //div[@class = 'col-lg-5']/div]<br/>
+Before finding the item: By.xpath: //div[@id = 'growls']//div[@class = 'growl-close']<br/>
+After finding the item: By.xpath: //div[@id = 'growls']//div[@class = 'growl-close']<br/>
+Before finding the item: By.xpath: //div[@id = 'growls']//div[@class = 'growl-close']<br/>
+After finding the item: By.xpath: //div[@id = 'growls']//div[@class = 'growl-close']<br/>
+Close notification.<br/>
+Before clicking on an item: [[EdgeDriver: MicrosoftEdge on WINDOWS (F0583579-1D7A-4797-B434-9AD421EEC78A)] -> xpath: //div[@id = 'growls']//div[@class = 'growl-close']]<br/>
+After clicking on the item: [[EdgeDriver: MicrosoftEdge on WINDOWS (F0583579-1D7A-4797-B434-9AD421EEC78A)] -> xpath: //div[@id = 'growls']//div[@class = 'growl-close']]<br/>
+Before finding the item: By.xpath: //input[@id='submit']<br/>
+After finding the item: By.xpath: //input[@id='submit']<br/>
+Click on the save new product button.<br/>
+Before clicking on an item: [[EdgeDriver: MicrosoftEdge on WINDOWS (F0583579-1D7A-4797-B434-9AD421EEC78A)] -> xpath: //input[@id='submit']]<br/>
+After clicking on the item: [[EdgeDriver: MicrosoftEdge on WINDOWS (F0583579-1D7A-4797-B434-9AD421EEC78A)] -> xpath: //input[@id='submit']]<br/>
+Before finding the item: By.xpath: //div[@id = 'growls']//div[@class = 'growl-close']<br/>
+After finding the item: By.xpath: //div[@id = 'growls']//div[@class = 'growl-close']<br/>
+Close notification.<br/>
+Before clicking on an item: [[EdgeDriver: MicrosoftEdge on WINDOWS (F0583579-1D7A-4797-B434-9AD421EEC78A)] -> xpath: //div[@id = 'growls']//div[@class = 'growl-close']]<br/>
+After clicking on the item: [[EdgeDriver: MicrosoftEdge on WINDOWS (F0583579-1D7A-4797-B434-9AD421EEC78A)] -> xpath: //div[@id = 'growls']//div[@class = 'growl-close']]<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>Test.QATestLab4.Script@28d25987</td></tr>
+<tr>
+<td title='Test.QATestLab4.Script.authorization()'><b>authorization</b><br>Test class: Test.QATestLab4.Script<br>Parameters: webinar.test@gmail.com, Xcg7299bnSmMuRLp9ITw<br/>
+<a href="#Output-925973605" onClick='toggleBox("Output-925973605", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-925973605" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-925973605">
+Before moving to the page: http://prestashop-automation.qatestlab.com.ua/admin147ajyvk0/<br/>
+After going to the page: http://prestashop-automation.qatestlab.com.ua/admin147ajyvk0/<br/>
+Before finding the item: By.id: email<br/>
+After finding the item: By.id: email<br/>
+Input login.<br/>
+Before finding the item: By.id: passwd<br/>
+After finding the item: By.id: passwd<br/>
+Input password.<br/>
+Before finding the item: By.name: submitLogin<br/>
+After finding the item: By.name: submitLogin<br/>
+Click on button login.<br/>
+Before clicking on an item: [[EdgeDriver: MicrosoftEdge on WINDOWS (F0583579-1D7A-4797-B434-9AD421EEC78A)] -> name: submitLogin]<br/>
+After clicking on the item: [[EdgeDriver: MicrosoftEdge on WINDOWS (F0583579-1D7A-4797-B434-9AD421EEC78A)] -> name: submitLogin]<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>Test.QATestLab4.Script@28d25987</td></tr>
+<tr>
+<td title='Test.QATestLab4.Script.goToMainPage()'><b>goToMainPage</b><br>Test class: Test.QATestLab4.Script<br/>
+<a href="#Output-1371495133" onClick='toggleBox("Output-1371495133", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1371495133" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1371495133">
+Before moving to the page:  http://prestashop-automation.qatestlab.com.ua/<br/>
+After going to the page:  http://prestashop-automation.qatestlab.com.ua/<br/>
+Before finding the item: By.xpath: //section[@id='content']/section/a<br/>
+After finding the item: By.xpath: //section[@id='content']/section/a<br/>
+Select all products.<br/>
+Before clicking on an item: [[EdgeDriver: MicrosoftEdge on WINDOWS (F0583579-1D7A-4797-B434-9AD421EEC78A)] -> xpath: //section[@id='content']/section/a]<br/>
+After clicking on the item: [[EdgeDriver: MicrosoftEdge on WINDOWS (F0583579-1D7A-4797-B434-9AD421EEC78A)] -> xpath: //section[@id='content']/section/a]<br/>
+Before finding the item: By.linkText: Product 1511912505707<br/>
+After finding the item: By.linkText: Product 1511912505707<br/>
+Before finding the item: By.linkText: Product 1511912505707<br/>
+After finding the item: By.linkText: Product 1511912505707<br/>
+Before finding the item: By.linkText: Product 1511912505707<br/>
+After finding the item: By.linkText: Product 1511912505707<br/>
+Before finding the item: By.linkText: Product 1511912505707<br/>
+After finding the item: By.linkText: Product 1511912505707<br/>
+Before finding the item: By.linkText: Product 1511912505707<br/>
+After finding the item: By.linkText: Product 1511912505707<br/>
+Before finding the item: By.linkText: Product 1511912505707<br/>
+After finding the item: By.linkText: Product 1511912505707<br/>
+Before finding the item: By.linkText: Product 1511912505707<br/>
+After finding the item: By.linkText: Product 1511912505707<br/>
+Before finding the item: By.linkText: Product 1511912505707<br/>
+After finding the item: By.linkText: Product 1511912505707<br/>
+Before finding the item: By.linkText: Product 1511912505707<br/>
+After finding the item: By.linkText: Product 1511912505707<br/>
+Choose a new product.<br/>
+Before clicking on an item: [[EdgeDriver: MicrosoftEdge on WINDOWS (F0583579-1D7A-4797-B434-9AD421EEC78A)] -> link text: Product 1511912505707]<br/>
+After clicking on the item: [[EdgeDriver: MicrosoftEdge on WINDOWS (F0583579-1D7A-4797-B434-9AD421EEC78A)] -> link text: Product 1511912505707]<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Test.QATestLab4.Script@28d25987</td></tr>
+<tr>
+<td title='Test.QATestLab4.Script.katalogProducts()'><b>katalogProducts</b><br>Test class: Test.QATestLab4.Script<br/>
+<a href="#Output-332873513" onClick='toggleBox("Output-332873513", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-332873513" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-332873513">
+Waiting loading.<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //span[@id='ajax_running']<br/>
+After finding the item: By.xpath: //span[@id='ajax_running']<br/>
+Before finding the item: By.xpath: //li[@id='subtab-AdminCatalog']/a<br/>
+After finding the item: By.xpath: //li[@id='subtab-AdminCatalog']/a<br/>
+Hover cursor over the directory.<br/>
+Before finding the item: By.xpath: //li[@id='subtab-AdminProducts']/a<br/>
+After finding the item: By.xpath: //li[@id='subtab-AdminProducts']/a<br/>
+Before finding the item: By.xpath: //li[@id='subtab-AdminProducts']/a<br/>
+After finding the item: By.xpath: //li[@id='subtab-AdminProducts']/a<br/>
+Select section goods.<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Test.QATestLab4.Script@28d25987</td></tr>
+<tr>
+<td title='Test.QATestLab4.Script.makeNewProduct()'><b>makeNewProduct</b><br>Test class: Test.QATestLab4.Script<br/>
+<a href="#Output-1926673338" onClick='toggleBox("Output-1926673338", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1926673338" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1926673338">
+Before finding the item: By.xpath: //a[@id='page-header-desc-configuration-add']<br/>
+After finding the item: By.xpath: //a[@id='page-header-desc-configuration-add']<br/>
+Before finding the item: By.xpath: //a[@id='page-header-desc-configuration-add']<br/>
+After finding the item: By.xpath: //a[@id='page-header-desc-configuration-add']<br/>
+Before finding the item: By.xpath: //a[@id='page-header-desc-configuration-add']<br/>
+After finding the item: By.xpath: //a[@id='page-header-desc-configuration-add']<br/>
+Before finding the item: By.xpath: //a[@id='page-header-desc-configuration-add']<br/>
+After finding the item: By.xpath: //a[@id='page-header-desc-configuration-add']<br/>
+Before finding the item: By.xpath: //a[@id='page-header-desc-configuration-add']<br/>
+After finding the item: By.xpath: //a[@id='page-header-desc-configuration-add']<br/>
+Before finding the item: By.xpath: //a[@id='page-header-desc-configuration-add']<br/>
+After finding the item: By.xpath: //a[@id='page-header-desc-configuration-add']<br/>
+Before finding the item: By.xpath: //a[@id='page-header-desc-configuration-add']<br/>
+After finding the item: By.xpath: //a[@id='page-header-desc-configuration-add']<br/>
+Before finding the item: By.xpath: //a[@id='page-header-desc-configuration-add']<br/>
+After finding the item: By.xpath: //a[@id='page-header-desc-configuration-add']<br/>
+Before finding the item: By.xpath: //a[@id='page-header-desc-configuration-add']<br/>
+After finding the item: By.xpath: //a[@id='page-header-desc-configuration-add']<br/>
+Click on the button to create a new product.<br/>
+Before clicking on an item: [[EdgeDriver: MicrosoftEdge on WINDOWS (F0583579-1D7A-4797-B434-9AD421EEC78A)] -> xpath: //a[@id='page-header-desc-configuration-add']]<br/>
+After clicking on the item: [[EdgeDriver: MicrosoftEdge on WINDOWS (F0583579-1D7A-4797-B434-9AD421EEC78A)] -> xpath: //a[@id='page-header-desc-configuration-add']]<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>Test.QATestLab4.Script@28d25987</td></tr>
+<tr>
+<td title='Test.QATestLab4.Script.propertiesNewProduct()'><b>propertiesNewProduct</b><br>Test class: Test.QATestLab4.Script<br/>
+<a href="#Output-394785440" onClick='toggleBox("Output-394785440", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-394785440" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-394785440">
+Before finding the item: By.xpath: //input[@id='form_step1_name_1']<br/>
+After finding the item: By.xpath: //input[@id='form_step1_name_1']<br/>
+Before finding the item: By.xpath: //input[@id='form_step1_name_1']<br/>
+After finding the item: By.xpath: //input[@id='form_step1_name_1']<br/>
+Before finding the item: By.xpath: //input[@id='form_step1_name_1']<br/>
+After finding the item: By.xpath: //input[@id='form_step1_name_1']<br/>
+Before finding the item: By.xpath: //input[@id='form_step1_name_1']<br/>
+After finding the item: By.xpath: //input[@id='form_step1_name_1']<br/>
+Before finding the item: By.xpath: //input[@id='form_step1_name_1']<br/>
+After finding the item: By.xpath: //input[@id='form_step1_name_1']<br/>
+Entering the name of the new product.<br/>
+Before finding the item: By.xpath: //input[@id='form_step1_qty_0_shortcut']<br/>
+After finding the item: By.xpath: //input[@id='form_step1_qty_0_shortcut']<br/>
+Entering the quantity of a new product.<br/>
+Before finding the item: By.xpath: //input[@id='form_step1_price_shortcut']<br/>
+After finding the item: By.xpath: //input[@id='form_step1_price_shortcut']<br/>
+Field clearing.<br/>
+New product price entry.<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Test.QATestLab4.Script@28d25987</td></tr>
+<tr>
+<td title='Test.QATestLab4.Script.testProduct()'><b>testProduct</b><br>Test class: Test.QATestLab4.Script<br/>
+<a href="#Output-333040629" onClick='toggleBox("Output-333040629", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-333040629" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-333040629">
+Before finding the item: By.xpath: //h1[@class='h1']<br/>
+After finding the item: By.xpath: //h1[@class='h1']<br/>
+Before finding the item: By.xpath: //h1[@class='h1']<br/>
+After finding the item: By.xpath: //h1[@class='h1']<br/>
+Before finding the item: By.xpath: //h1[@class='h1']<br/>
+After finding the item: By.xpath: //h1[@class='h1']<br/>
+Before finding the item: By.xpath: //h1[@class='h1']<br/>
+After finding the item: By.xpath: //h1[@class='h1']<br/>
+Before finding the item: By.xpath: //h1[@class='h1']<br/>
+After finding the item: By.xpath: //h1[@class='h1']<br/>
+Before finding the item: By.xpath: //h1[@class='h1']<br/>
+After finding the item: By.xpath: //h1[@class='h1']<br/>
+Before finding the item: By.xpath: //h1[@class='h1']<br/>
+After finding the item: By.xpath: //h1[@class='h1']<br/>
+Before finding the item: By.xpath: //h1[@class='h1']<br/>
+After finding the item: By.xpath: //h1[@class='h1']<br/>
+Before finding the item: By.xpath: //span[@itemprop = 'price']<br/>
+After finding the item: By.xpath: //span[@itemprop = 'price']<br/>
+Before finding the item: By.xpath: //div[@class = 'product-quantities']/span<br/>
+After finding the item: By.xpath: //div[@class = 'product-quantities']/span<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Test.QATestLab4.Script@28d25987</td></tr>
+</table><p>
+</body>
+</html>

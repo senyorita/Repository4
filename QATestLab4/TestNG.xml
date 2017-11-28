@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="TestSuite">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="ScriptEdge">
+		<parameter name="browser" value="Edge" />
+		<classes>
+			<class name="Test.QATestLab4.Script" />
+		</classes>
+	</test>
+
+	<test name="ScriptChrome">
+		<parameter name="browser" value="Chrome" />
+		<classes>
+			<class name="Test.QATestLab4.Script" />
+		</classes>
+	</test>
+
+	<test name="ScriptFirefox">
+		<parameter name="browser" value="Firefox" />
+		<classes>
+			<class name="Test.QATestLab4.Script" />
+		</classes>
+	</test>
+
+</suite>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ScriptFirefox"
+           tests="7"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="22,309">
+  <properties />
+  
+  
+            <testcase name="propertiesNewProduct" time="0,374" classname="Test.QATestLab4.Script" />
+                <testcase name="testProduct" time="0,189" classname="Test.QATestLab4.Script" />
+                <testcase name="katalogProducts" time="3,596" classname="Test.QATestLab4.Script" />
+                <testcase name="authorization" time="2,582" classname="Test.QATestLab4.Script" />
+                <testcase name="activationAndSave" time="2,065" classname="Test.QATestLab4.Script" />
+                <testcase name="makeNewProduct" time="6,724" classname="Test.QATestLab4.Script" />
+                <testcase name="goToMainPage" time="6,779" classname="Test.QATestLab4.Script" />
+      
+</testsuite>
